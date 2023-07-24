@@ -1,18 +1,23 @@
-node_modules
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-node_modules/angular/*
-!node_modules/angular/angular.js
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
 
-node_modules/angular-route/*
-!node_modules/angular-route/angular-route.js
+# testing
+/coverage
 
-node_modules/angular-mocks/*
-node_modules/karma/*
-node_modules/.bin/*
+# production
+/build
 
-node_modules/todomvc-app-css/*
-!node_modules/todomvc-app-css/index.css
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-node_modules/todomvc-common/*
-!node_modules/todomvc-common/base.css
-!node_modules/todomvc-common/base.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
